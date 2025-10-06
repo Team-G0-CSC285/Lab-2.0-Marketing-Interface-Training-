@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamOptimizer™ by Algocratic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .ad-container {
+            width: 100%;
+            max-width: 800px;
+            aspect-ratio: 8.5/11;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
+            height: 55%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glow-effect {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+            50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+        }
+
+        .pillow-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 280px;
+            height: 180px;
+            background: linear-gradient(135deg, #f0f0f0 0%, #d0d0d0 100%);
+            border-radius: 50px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            z-index: 2;
+        }
+
+        .pillow-pattern {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            border: 2px solid rgba(102, 126, 234, 0.3);
+            border-radius: 40px;
+        }
+
+        .speaker-dot {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #667eea;
+            border-radius: 50%;
+        }
+
+        .speaker-dot:nth-child(1) { top: 40%; left: 30%; }
+        .speaker-dot:nth-child(2) { top: 40%; left: 50%; }
+        .speaker-dot:nth-child(3) { top: 40%; left: 70%; }
+        .speaker-dot:nth-child(4) { top: 60%; left: 30%; }
+        .speaker-dot:nth-child(5) { top: 60%; left: 50%; }
+        .speaker-dot:nth-child(6) { top: 60%; left: 70%; }
+
+        .wireless-icon {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            color: white;
+            font-size: 14px;
+            opacity: 0.9;
+            z-index: 3;
+        }
+
+        .content-section {
+            padding: 40px 50px;
+            background: white;
+            height: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 300;
+            color: #1e3c72;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        .product-name {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 5px;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #7e22ce;
+            font-style: italic;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .feature {
+            font-size: 11px;
+            color: #333;
+            display: flex;
+            align-items: flex-start;
+            line-height: 1.4;
+        }
+
+        .feature::before {
+            content: "◆";
+            color: #667eea;
+            margin-right: 8px;
+            font-size: 8px;
+            margin-top: 2px;
+        }
+
+        .cta {
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+            letter-spacing: 2px;
+        }
+
+        .cta-highlight {
+            color: #7e22ce;
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            .ad-container {
+                aspect-ratio: 1/1.2;
+            }
+            
+            .content-section {
+                padding: 25px 30px;
+            }
+            
+            .product-name {
+                font-size: 32px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <div class="hero-section">
+            <div class="glow-effect"></div>
+            <div class="wireless-icon">⚡ WIRELESS</div>
+            <div class="pillow-image">
+                <div class="pillow-pattern">
+                    <div class="speaker-dot"></div>
+                    <div class="speaker-dot"></div>
+                    <div class="speaker-dot"></div>
+                    <div class="speaker-dot"></div>
+                    <div class="speaker-dot"></div>
+                    <div class="speaker-dot"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <div>
+                <div class="logo">ALGOCRATIC</div>
+                <div class="product-name">DreamOptimizer™</div>
+                <div class="tagline">"The Future of Rest is Wireless"</div>
+                
+                <div class="features">
+                    <div class="feature">Sleep tracking with subliminal productivity podcasts</div>
+                    <div class="feature">AI dream interpretation for subconscious blockers</div>
+                    <div class="feature">Auto-adjusts room temperature for optimal REM efficiency</div>
+                    <div class="feature">Smart pillowcase with integrated speakers</div>
+                </div>
+            </div>
+            
+            <div class="cta">
+                <span class="cta-highlight">OPTIMIZE YOUR UNCONSCIOUS</span> • ALGOCRATIC.COM
+            </div>
+        </div>
+    </div>
+</body>
+</html>
