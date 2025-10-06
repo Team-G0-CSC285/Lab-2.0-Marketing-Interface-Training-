@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamOptimizer™ Social Ad</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .social-post {
+            width: 100%;
+            max-width: 500px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+        }
+
+        .brand {
+            font-size: 12px;
+            letter-spacing: 4px;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .product {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            font-size: 20px;
+            font-style: italic;
+            margin-bottom: 35px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: white;
+            margin: 30px auto;
+            opacity: 0.6;
+        }
+
+        .features-list {
+            text-align: left;
+            margin-bottom: 35px;
+        }
+
+        .feature-item {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            opacity: 0.95;
+        }
+
+        .feature-item::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            font-weight: 600;
+        }
+
+        .cta-container {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .cta-text {
+            font-size: 14px;
+            letter-spacing: 3px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .website {
+            font-size: 13px;
+            opacity: 0.8;
+            letter-spacing: 1px;
+        }
+
+        .emoji {
+            font-size: 24px;
+            margin-bottom: 15px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @media (max-width: 500px) {
+            .social-post {
+                padding: 40px 30px;
+            }
+            
+            .product {
+                font-size: 38px;
+            }
+            
+            .tagline {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="social-post">
+        <div class="bg-pattern"></div>
+        <div class="content">
+            <div class="emoji">💤</div>
+            <div class="brand">ALGOCRATIC</div>
+            <div class="product">DreamOptimizer™</div>
+            <div class="tagline">"The Future of Rest is Wireless"</div>
+            
+            <div class="divider"></div>
+            
+            <div class="features-list">
+                <div class="feature-item">Sleep tracking with subliminal productivity podcasts</div>
+                <div class="feature-item">AI dream interpretation for "subconscious blockers"</div>
+                <div class="feature-item">Adjusts room temperature for optimal REM efficiency</div>
+                <div class="feature-item">Smart pillowcase with integrated speakers</div>
+            </div>
+            
+            <div class="cta-container">
+                <div class="cta-text">OPTIMIZE YOUR UNCONSCIOUS</div>
+                <div class="website">algocratic.com</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
